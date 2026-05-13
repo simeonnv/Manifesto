@@ -7,6 +7,7 @@
     nativeBuildInputs = with pkgs; [
       stdenv.cc
       clang
+      lld
       pkg-config
       cmake
       gcc
@@ -14,7 +15,7 @@
       automake
       llvm
       libclang
-      dioxus-cli
+      nodejs
     ];
 
     buildInputs = with pkgs; [
@@ -26,7 +27,8 @@
       curl
       libclang
       llvm
-      dioxus-cli
+      lld
+      nodejs
     ];
 
     devTools = with pkgs; [
@@ -37,7 +39,8 @@
       rust-analyzer
       libclang
       llvm
-      dioxus-cli
+      lld
+      nodejs
     ];
   };
 }
