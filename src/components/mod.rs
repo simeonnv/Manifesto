@@ -4,3 +4,18 @@
 
 mod hero;
 pub use hero::Hero;
+
+mod main_wrapper;
+pub use main_wrapper::MainWrapper;
+
+mod header;
+pub use header::Header;
+
+mod footer;
+pub use footer::Footer;
+
+mod github_icon;
+pub use github_icon::GithubIcon;
+
+mod font_face;
+pub use font_face::FontFace;
